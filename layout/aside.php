@@ -10,10 +10,10 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/pkg_validations/Formateur/Realisations/index.php"
+                <a href="/modules/pkg_realisation_projets/Apprenant/index.php"
                   class="nav-link <?php echo (strpos($current_route, 'Réalisations') !== false) ? 'active' : ''; ?>">
                   <i class="nav-icon fas fa-laptop-code"></i>
-                  <p>Réalisations</p>
+                  <p>Mes Réalisation</p>
                 </a>
               </li>
             </ul>
