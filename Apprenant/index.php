@@ -1,4 +1,4 @@
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/config.php'; ?>
+ <?php include_once $_SERVER['DOCUMENT_ROOT'].'/config.php'; ?>
 <!DOCTYPE html>
 <html lang="fr">
 <?php include_once  $config['views_path'] . 'head.php'; ?>
@@ -35,14 +35,7 @@
                                 <div class="card-header">
                                     <h3 class="card-title">Tableau des projets</h3>
                                     <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"
-                                            title="Réduire">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove"
-                                            title="Supprimer">
-                                            <i class="fas fa-times"></i>
-                                        </button>
+                                        
                                     </div>
                                 </div>
                                 <div class="card-body">
