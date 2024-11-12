@@ -85,6 +85,19 @@
                                         <label for="reference">Référence :</label>
                                         <p><a href="https://exemple.com/reference">https://exemple.com/reference</a></p>
                                     </div>
+
+                                    <!-- Champ Livrable -->
+                                    <div class="col-sm-12">
+                                        <label for="reference">Livrables :</label>
+                                        <p><ul>
+                                            <li>
+                                                Maquette
+                                            </li>
+                                            <li>
+                                                Code source
+                                            </li>
+                                        </ul></p>
+                                    </div>
                                 </div>
 
                             </div>
@@ -97,7 +110,7 @@
 
 
         <!-- Inclure le pied de page -->
-        <?php include_once "../../layouts/footer.php" ?>
+        <?php include_once  $config['views_path'] . 'footer.php'; ?>
 
     </div>
 
