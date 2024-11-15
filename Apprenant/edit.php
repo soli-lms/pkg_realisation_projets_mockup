@@ -27,8 +27,9 @@
                         <div class="col-md-12">
                             <div class="card card-default">
                                 <div class="card-header">
-                                    <h3 class="card-title">Modifier le brief projet</h3>
+                                    <h3 class="card-title">Livrables</h3>
                                 </div>
+                                
                                 <div class="card-body p-0">
                                     <table class="table">
                                         <thead>
@@ -39,33 +40,41 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Presentation</td>
+                                                <td><i class="fab fa-github"> GitHub</i></td>
                                                 <td><input type="text" name="lien[]" class="form-control"
-                                                        value="https://example.com/presentation"></td>
+                                                        value="https://github.com/code"></td>
                                             </tr>
                                             <tr>
-                                                <td>Code <a href="https://example.com/code"></a></td>
+                                                <td><i class="fab fa-figma"> Figma</i> <a href="https://example.com/code"></a></td>
                                                 <td><input type="text" name="lien[]" class="form-control"
-                                                        value="https://example.com/code"></td>
+                                                        value="https://figma.com/maquette"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fab fa-google-drive"> Google Drive</i> <a href="https://example.com/code"></a></td>
+                                                <td><input type="text" name="lien[]" class="form-control"
+                                                        value="https://drive.google.com/dossier"></td>
                                             </tr>
                                             <tr>
                                                 <td>Etat </td>
-                                                <td><select class="form-control" id="project">
-                                            <option value="">Tous</option>
-                                            <option value="à faire">à faire</option>
-                                            <option value="en cours">en cours</option>
-                                            <option value="en pause">en pause</option>
-                                            <option value="terminé">terminé</option>
-</td>
-                                        
+                                                <td>
+                                                    <select class="form-control" id="project">
+                                                        <option value="">Tous</option>
+                                                        <option value="à faire">à faire</option>
+                                                        <option value="en cours">en cours</option>
+                                                        <option value="en pause">en pause</option>
+                                                        <option value="terminé">terminé</option>
+                                                                                                  
+                                                    </select>
+                                                </td>  
                                             </tr>
                                            
                                         </tbody>
                                       
                                     </table>
+                                  
                                 </div>
                                 <div class="text-right m-5">
-                                            <a type="submit" href="index.php" class="btn btn-primary">Valider le brief</a>
+                                            <a type="submit" href="index.php" class="btn btn-info">Valider le brief</a>
                                         </div>
                             </div>
                             
@@ -76,14 +85,9 @@
         </div>
     </div>
 
-    <!-- Include footer -->
-    <?php include_once "../../layouts/footer.php" ?>
-
-
-
-
+ 
     <!-- Inclure le pied de page -->
-    <?php include_once "../../layouts/footer.php" ?>
+    <?php include_once $config['views_path']. 'footer.php' ?>
 
     </div>
 
