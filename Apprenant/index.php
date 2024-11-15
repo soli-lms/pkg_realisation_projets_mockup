@@ -34,48 +34,41 @@
                             <div class="card">
                                 <div class="card-header">
                                     <h3 class="card-title">Tableau des projets</h3>
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse"
-                                            title="Réduire">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-tool" data-card-widget="remove"
-                                            title="Supprimer">
-                                            <i class="fas fa-times"></i>
-                                        </button>
-                                    </div>
+                                   
                                 </div>
                                 <div class="card-body">
                                     <div class="row mb-3">
                                         <div class="col-md-3">
-                                            <label for="skill">Compétence :</label>
-                                            <select class="form-control" id="skill">
-                                                <option value="">Toutes</option>
-                                                <option value="C1">Maquetter une application mobile</option>
-                                                <option value="C2">Manipuler une base de données - perfectionnement
-                                                </option>
-                                                <option value="C3">Développer la partie back-end d’une application web
-                                                    ou web mobile - perfectionnement</option>
-                                                <option value="C4">Collaborer à la gestion d’un projet informatique et à
-                                                    l’organisation de l’environnement de développement -
-                                                    perfectionnement</option>
-                                                <option value="C5">Développer une application mobile native, avec
-                                                    Android et React Native</option>
-                                                <option value="C6">Préparer et exécuter les plans de tests d’une
-                                                    application</option>
-                                                <option value="C7">Préparer et exécuter le déploiement d’une application
-                                                    web et mobile - perfectionnement</option>
+                                            <label for="skill">Etat de réalisation :</label>
+                                            <select class="form-control" id="project">
+                                                <option value="">Tous</option>
+                                                <option value="à faire">à faire</option>
+                                                <option value="en cours">en cours</option>
+                                                <option value="en pause">en pause</option>
+                                                <option value="terminé">terminé</option>    
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="skill">Etat de validation :</label>
+                                            <select class="form-control" id="project">
+                                                <option value="">Tous</option>
+                                                <option value="en attente">en attente</option>
+                                                <option value="en révision">en révision</option>
+                                                <option value="validé">validé</option>
+                                                <option value="non validé">non validé</option>
+                                                    
                                             </select>
                                         </div>
                                         <div class="col-md-4 mt-4">
                                             <div class="input-group">
                                                 <input type="text" class="form-control" placeholder="nom brief projet...">
                                                 <div class="input-group-append">
-                                                    <button class="btn btn-primary" type="button">
+                                                    <button class="btn btn-default" type="button">
                                                         <i class="fas fa-search"></i>
                                                     </button>
                                                 </div>
                                             </div>
+                                           
                                         </div>
                                     </div>
 
@@ -83,11 +76,12 @@
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>Brief projet</th>
-                                            <th>Competences</th>
-                                            <th>Etat de réalisation</th>
+                                            <th>Brief projet</th>   
                                             <th>Date debut</th> 
-                                            <th>Date de fin</th>
+                                            <th>Date de fin</th>            
+                                            <th>Etat de réalisation</th>
+                                            <th>Etat de validation</th>
+                                            <th>Remarques de formateur</th>
                                             <th>Actions</th>
                                         </tr>
                                         
@@ -95,23 +89,22 @@
                                     <tbody>
                                         <tr>
                                             <td>Lab-Markdown</td>
-                                            <td>
-                                                <ul>
-                                                    <li>C1. Maquetter une application mobile <span>(Imiter)</span></li>
-                                                    <li>C2. Manipuler une base de données <span>(Adapter)</span> </li>
-                                                </ul>
-                                            </td>
+                                            <td>2021-12-01</td>
+                                            <td>2021-12-8</td>
                                             <td class="etat">
                                                 <span class="badge badge-info">En cours</span>
                                             </td>
-                                            <td>2021-12-01</td>
-                                            <td>2021-12-8</td>
+                                            <td class="etat">
+                                                <span class="badge badge-secondary">En attente</span>
+                                            </td>
+                                           
+                                            <td></td>
                                             <td class="text-center">
-                                                <a href="show.php" class='btn btn-default btn-sm'>
-                                                    <i class="far fa-eye"></i>
+                                                <a href="show.php" class='btn btn-default btn-sm mb-1'>
+                                                    <i class="far fa-eye"> Brief projet</i>
                                                 </a>
                                                 <a href="edit.php" class="btn btn-default btn-sm" >
-                                                    <i class="fas fa-edit"></i>
+                                                <i class="far fa-folder"> Livrables</i>
                                                 </a>
                                             </td>
 
@@ -131,17 +124,18 @@
                                         </button>
                                     </div>
                                     <div class="mr-5">
-                                        <ul class="pagination  m-0 float-right">
-                                            <li class="page-item"><a class="page-link" href="#">«</a></li>
-                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">»</a></li>
+                                        <ul class="pagination m-0 float-right">
+                                            <li class="page-item"><a class="page-link text-secondary" href="#">«</a></li>
+                                            <li class="page-item"><a class="page-link active text-secondary" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link text-secondary" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link text-secondary" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link text-secondary" href="#">»</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <!-- /.card-footer-->
+                             <?php  include $config['views_path']. 'footer.php' ?>
                         </div>
                         <!-- /.card -->
                     </div>

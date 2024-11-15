@@ -26,8 +26,8 @@
                             <h1>Détails du projet</h1>
                         </div>
                         <div class="col-sm-6">
-                            <a href="./edit.php" class="btn btn-default float-right"><i class="far fa-edit"></i>
-                                Modifier</a>
+                            <a href="./edit.php" class="btn btn-info float-right"><i class="far fa-edit"></i>
+                                Réaliser</a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
 
 
         <!-- Inclure le pied de page -->
-        <?php include_once "../../layouts/footer.php" ?>
+        <?php include_once $config['views_path']. 'footer.php' ?>
 
     </div>
 
